@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Document with Images, Hyperlinks, and Digital Signature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #0070e0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #signature-container {
+            border: 2px dashed #0070e0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #signature {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+
+        #signature-button {
+            background-color: #0070e0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+
+    <!-- Image -->
+   <img src="file:///C:/images/bird1.jpg" alt="Sample Image">
+
+    <!-- Hyperlink -->
+    <p>Visit our <a href="www.google.com" target="_blank">website</a> for more information.</p>
+
+    <!-- Digital Signature -->
+    <div id="signature-container">
+        <h2>Digital Signature</h2>
+        <canvas id="signature"></canvas>
+        <button id="signature-button">Sign Document</button>
+    </div>
+
+    <script>
+        // JavaScript code for handling digital signature goes here
+        // You'll need to use a library for digital signatures and implement the functionality
+        // This is just a placeholder
+        const signatureCanvas = document.getElementById("signature");
+        const signatureButton = document.getElementById("signature-button");
+
+        signatureButton.addEventListener("click", () => {
+            // Implement your digital signature logic here
+            alert("Digital signature functionality to be implemented.");
+        });
+    </script>
+</body>
+</html>
