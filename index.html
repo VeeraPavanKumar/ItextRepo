@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freeze Scrolling Example</title>
+    <style>
+      @keyframes scroll {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(50%);
+        } /* Adjust the percentage to control the stopping point */
+      }
+
+      .scrolling-container {
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .scrolling-content {
+        display: inline-block;
+        animation: scroll 5s linear forwards; /* Adjust the duration as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scrolling-container" id="scrollingContainer">
+      <div class="scrolling-content" id="scrollingContent">
+        This text is scrolling and stops in the middle of the page.
+      </div>
+    </div>
+
+    <script>
+      // Get references to the container and content elements
+      var scrollingContainer = document.getElementById("scrollingContainer");
+      var scrollingContent = document.getElementById("scrollingContent");
+
+      // Pause the animation when it reaches the middle of the container
+      scrollingContent.addEventListener("animationiteration", function () {
+        scrollingContainer.style.animationPlayState = "paused";
+      });
+    </script>
+  </body>
+</html>
