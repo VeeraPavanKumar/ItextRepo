@@ -1,0 +1,83 @@
+Functional and Financial
+
+1.1 a) Ensure 99% uptime of critical applications i.e PLM, PLMSYNC & ISDMS through out the year
+
+b) Be up-to-date in SRFs ,Ensure proper/quality delivery of SRF's on time agreed with EDC
+
+c) Ensure timely resolution of helpdesk queries in PLM, ISDMS Reports, Maintaining the HDQ and SRF's DPP within target
+
+d)Ensure CDAC Audit to be completed for PLM domain, and Actively participate in IMS audits as and when planned
+
+e)Sustain CMMI Level 3 practices in software development (SRFs).
+
+f) Contribute to meet revenue budget.
+
+g) Support to complete PLM upgrade along with testing. Below are to be completed. In this,
+
+i) All 80 modules upgrade with out any logical errors
+
+ii) Ensure Backup restoration testing to be planned and completed every quarter for PLM
+
+iii) Ensure latest Source code availability in TFS for PLM, PLMSYNC & ISDMS Reports.
+=========================================================================================================================
+Ensured 99% uptime of critical applications, unplanned downtimes are kept within the target limit.
+
+Up to date SRF completion achieved with quality every month with nil regression / rework and SRF DPP's acheieved target.
+
+COmpleted 15 SRF's including 4 major requirements.
+
+Handling Helpdesk Queries, PLM and ISDMS Helpdesk queries DPP achieved target,
+
+Ensured Proper code merging and Quality practices before deployment like change action log maintenance.
+
+Active participation in the internal audit.
+
+providing support along with the Upgrade testing team, Maintaining record in a daily basis.
+
+Upgradation process - In progress.
+===============================================================================================================================
+
+Take responsibility as DPP and DRM coordinator to keep a track on departmental performance throughout the year
+
+b) Participate in min 4 PI teams
+=========================================================================================================================
+
+Took responsibility as a DPP and DRM cordinator, conducts meeting on time and ensured timely update of process measures and MOM in the IMS portal.
+
+active Participation in cemc .
+
+======================================================================================================================================================
+Customer Relations
+
+7.1 a)Continous feedback monitoring and CSI to maintain min average scale 4 out of 5
+
+b)Ensure timely update to the customers , 
+.
+c)Regular meeting with the customer to get the feedback in direct .
+
+d)Ensure proper tracking of work discussion with the customer through documentation and maintain mail communication.
+=============================================================================================================================
+
+Ensured timely update to the customers ,providing proper EDC and working towards achieving the goal inline with the agreed delivery points.
+
+Regular interaction with customers to get feedback on the deployed process.
+
+Every minor and major changes are recorded, ensured recieveing proper documentation and requirement gathering through mail.
+
+==============================================================================================================================================
+
+8.1 a)Learning the enovia 3D experience components and the deployment process for self and guidance to the developers
+
+b)Learning the need of asset management system and extend support on implementation/customization of process in IBM maximo based on the client's requirement
+
+c)upskill myself on DBMS to support the PLM SYNC and ISDMS process
+
+==============================================================================================================================================
+
+Along with the testing and the learning in progress, ensured current deployment process in the 3D experience platform. 
+
+Learning the IBM Maximo application and team formation is in progress.
+
+Handling ISDMS, Weight buildup portal , upskill myself on SQL Server Management Studio , 25% of the Level-2 certification was completed.
+
+
