@@ -1,0 +1,241 @@
+1.Closure and Scoping:
+ Description:
+ A closure is a fundamental concept in JavaScript that occurs 
+ when a function retains access to variables from its containing or outer scope, even after the outer function has completed.
+ Closures are often used to create private variables, maintain state, and encapsulate functionality.
+example code:
+function counter() {
+  let count = 0; // This variable is within the scope of the counter function.
+  return function() {
+    count++; // The inner function retains access to the count variable.
+    return count;
+  };
+}
+
+const increment = counter(); // The 'counter' function is called and returns the inner function.
+console.log(increment()); // 1 - Each time 'increment' is called, it increases 'count' due to the closure.
+console.log(increment()); // 2 - The 'count' variable is preserved across function calls.
+
+
+2.Asynchronous JavaScript:
+Description: 
+Asynchronous programming is essential in JavaScript for handling tasks like making network requests, reading files, and responding to user interactions. 
+Callbacks and Promises are two common ways to deal with asynchronous operations. Promises offer a more structured and maintainable approach to asynchronous programming.
+Two methods-Promise-based HTTP Request,Using Promise.all to Wait for Multiple Promises.
+
+3.Object-Oriented Programming in JavaScript:
+Description: JavaScript is a prototype-based language, and object-oriented programming is achieved through the use of prototypes. Prototypes allow objects to inherit properties and methods from other objects,making it possible to create object hierarchies and reuse code.
+Constructor Function with Prototype Methods Example:
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.greet = function() {
+  console.log(`Hello, my name is ${this.name}.`);
+}
+
+const person1 = new Person('Alice');
+person1.greet(); // Hello, my name is Alice
+
+4.What is the DOM?
+The DOM is a W3C (World Wide Web Consortium) standard.
+The DOM defines a standard for accessing documents:
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+5.The HTML DOM Document Object?
+The document object represents your web page.
+If you want to access any element in an HTML page, you always start with accessing the document object.
+Finding HTML Elements
+
+     Method	                                  Description
+
+document.getElementById(id)	           Find an element by element id
+document.getElementsByTagName(name)	   Find elements by tag name
+document.getElementsByClassName(name)	   Find elements by class name
+
+6.What is JSON?
+
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data-interchange format
+JSON is plain text written in JavaScript object notation
+JSON is used to send data between computers
+JSON is language independent 
+
+6.Why Use JSON?
+
+The JSON format is syntactically similar to the code for creating JavaScript objects. Because of this, a JavaScript program can easily convert JSON data into JavaScript objects.
+Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.
+JavaScript has a built in function for converting JSON strings into JavaScript objects:
+JSON.parse()
+JavaScript also has a built in function for converting an object into a JSON string:
+JSON.stringify()
+
+7. Java script datatypes?
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date  
+
+function in java script?
+A JavaScript function is a block of code designed to perform a particular task.
+A JavaScript function is executed when "something" invokes it (calls it).
+ex: function myFunction(p1, p2) {
+  return p1 * p2;
+}
+syntax :
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+8.ES6 Features:
+Description: ES6 (ECMAScript 2015) introduced many new features and improvements to JavaScript. let and const provide block-level scoping, and the class syntax offers a cleaner way to define constructor functions and methods.
+example : 
+let count = 0; // 'count' can be reassigned (use 'let').
+const pi = 3.14159; // 'pi' is a constant (use 'const').
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  greet() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+const person1 = new Person('Alice');
+person1.greet(); // Hello, my name is Alice
+
+9.ERROR HANDLING IN JAVA SCRIPT 
+ANS:
+Throw, and Try...Catch...Finally
+The try statement defines a code block to run (to try).
+The catch statement defines a code block to handle any error.
+The finally statement defines a code block to run regardless of the result.
+The throw statement defines a custom error.
+
+EXAMPLE: EXAMPLE FOR TRYM,CATCH AND FINALLY 
+try {
+  Block of code to try
+}
+catch(err) {
+  Block of code to handle errors
+}
+finally {
+  Block of code to be executed regardless of the try / catch result
+}
+Function for Reading Data from a JSON File with Error Handling:
+function readJSONFile(filename) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filename, 'utf8', (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(JSON.parse(data));
+      }
+    });
+  });
+}
+
+
+10.Conditional Statements?
+Very often when you write code, you want to perform different actions for different decisions.
+You can use conditional statements in your code to do this.
+
+In JavaScript we have the following conditional statements:
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed  ( example on switch statement)
+
+11. what is math object in javascript and what is the syntax ?
+The Math Object
+Unlike other objects, the Math object has no constructor.
+The Math object is static.
+All methods and properties can be used without creating a Math object first.
+Math Properties (Constants)
+The syntax for any Math property is : Math.property
+
+how many mathematical constants present in java script ?
+Total 8 constants 
+Math.E        // returns Euler's number
+Math.PI       // returns PI
+Math.SQRT2    // returns the square root of 2
+Math.SQRT1_2  // returns the square root of 1/2
+Math.LN2      // returns the natural logarithm of 2
+Math.LN10     // returns the natural logarithm of 10
+Math.LOG2E    // returns base 2 logarithm of E
+Math.LOG10E   // returns base 10 logarithm of E
+
+12. Java script for each ?
+JavaScript Array forEach()
+The forEach() method calls a function (a callback function) once for each array element.
+array.forEach(function(currentValue, index, array) {
+  // Action to perform for each element
+}, thisArg);
+
+13. What is a constructor in JavaScript?
+A constructor is a special method in JavaScript that is used for creating and initializing objects. It is typically defined using a function and is called when you create a new instance of an object using the new keyword.
+
+How do you create a constructor in JavaScript?
+You can create a constructor by defining a function and using the this keyword to assign properties and methods to the object being created.
+example:
+function Person(name, age) {
+  _this.name = name;
+  this.age = age;
+}
+
+How can you achieve inheritance between constructors in JavaScript?
+Inheritance between constructors can be achieved by setting the prototype of a child constructor to an instance of the parent constructor, which establishes a prototype chain. 
+This allows the child constructor to inherit properties and methods from the parent.
+
+What is the purpose of the instanceof operator in JavaScript?
+The instanceof operator is used to check if an object is an instance of a particular constructor. It returns true if the object is an instance of the constructor and false otherwise.
+
+Can you have multiple constructors for a single object type in JavaScript?
+JavaScript does not support multiple constructors in the same way that some other programming languages do. However, you can achieve similar behavior by using conditional logic within a single constructor function to handle different initialization scenarios.
+
+14.What is map function in java script?
+A Map holds key-value pairs where the keys can be any datatype.
+A Map remembers the original insertion order of the keys.
+
+15.(Application Programming Interfaces) in JavaScript:
+What is an API in the context of web development?
+An API (Application Programming Interface) is a set of rules and protocols that allows one software application to interact with another. 
+In web development, it often refers to the endpoints and methods provided by web servers to request and exchange data.
+
+How do you make an HTTP GET request to an API in JavaScript?
+You can use the fetch API or libraries like axios to make HTTP GET requests to an API. Here's an example using fetch:
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => {
+    // Process the API response data
+  })
+  .catch(error => {
+    // Handle any errors
+  });
+
+
+what are HTTP methods, and how are they commonly used when working with APIs?
+
+HTTP methods (GET, POST, PUT, DELETE, etc.) are used to perform specific actions on resources. GET is used for fetching data,
+ POST for creating data, PUT for updating data, and DELETE for removing data.
+
+What is the purpose of the fetch API in JavaScript?
+The fetch API is used to make network requests, including fetching resources from the web or making API calls. It provides a modern, promise-based way to work with HTTP requests.
